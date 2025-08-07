@@ -1,0 +1,33 @@
+.authFormWrapper {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #f0f4ff 0%, #e0e7ff 100%);
+  padding: 2rem;
+}
+
+.authForm {
+  background: #fff;
+  border-radius: 1.5rem;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+  padding: 2.5rem 2rem 2rem 2rem;
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  position: relative;
+  animation: fadeIn 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media (max-width: 600px) {
+    padding: 1.5rem 0.5rem 1rem 0.5rem;
+    max-width: 95vw;
+    border-radius: 1rem;
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
